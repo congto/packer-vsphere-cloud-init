@@ -65,9 +65,9 @@ source "vsphere-iso" "linux-ubuntu-server" {
   notes                = "Built by HashiCorp Packer on ${local.buildtime}."
 
   // Removable Media Settings
-  #iso_paths    = ["[${var.vsphere_iso_datastore}] ${var.vsphere_iso_path}/${var.iso_file}"]
+  iso_paths    = ["[${var.vsphere_iso_datastore}] ${var.vsphere_iso_path}/${var.iso_file}"]
   iso_checksum = "${var.vsphere_iso_hash}:${var.iso_checksum}"
-  iso_urls     = [var.iso_urls]
+  #iso_urls     = [var.iso_urls]
 
   // Boot and Provisioning Settings
   http_port_min = var.vsphere_http_port_min
