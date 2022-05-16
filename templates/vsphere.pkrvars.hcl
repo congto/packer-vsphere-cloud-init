@@ -5,17 +5,17 @@
 */
 
 // vSphere Credentials
-vsphere_endpoint            = "vc.bmrf.io"
+vsphere_endpoint            = "vc.hcdlab.local"
 vsphere_username            = "administrator@vsphere.local"
-vsphere_password            = "VMware123!"
+vsphere_password            = "Homelab@2020"
 vsphere_insecure_connection = true
 
 // vSphere Settings
-vsphere_datacenter = "Black Mesa"
-vsphere_cluster    = "Compute"
-vsphere_datastore  = "ESXi2-SSD"
-vsphere_network    = "Management-VL11"
-vsphere_folder     = "templates/packer/ubuntu"
+vsphere_datacenter = "HCD-DC01"
+vsphere_cluster    = "HCD-Cluster02"
+vsphere_datastore  = "datastore4-r620"
+vsphere_network    = "dvpg-vlan-20"
+vsphere_folder     = "Templates"
 
 
 // Virtual Machine Settings
@@ -24,8 +24,8 @@ vsphere_tools_upgrade_policy = true
 vsphere_remove_cdrom         = true
 
 // Removable Media Settings
-# vsphere_iso_datastore = "sfo-w01-cl01-ds-nfs01"
-# vsphere_iso_path      = "iso"
+# vsphere_iso_datastore = "datastore2-r620"
+# vsphere_iso_path      = "ISO"
 vsphere_iso_hash = "sha512"
 
 // Boot and Provisioning Settings
