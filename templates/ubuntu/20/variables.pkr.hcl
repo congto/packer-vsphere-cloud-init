@@ -41,6 +41,7 @@ variable "vsphere_datacenter" {
 variable "vsphere_cluster" {
   type        = string
   description = "The name of the target vSphere cluster. (e.g. 'sfo-w01-cl01')"
+  default     = "HCD-Cluster02"
 }
 
 variable "vsphere_datastore" {

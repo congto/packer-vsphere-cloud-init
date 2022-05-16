@@ -19,7 +19,7 @@ vsphere_folder     = "Templates"
 
 
 // Virtual Machine Settings
-vsphere_vm_version           = 19
+vsphere_vm_version           = 15
 vsphere_tools_upgrade_policy = true
 vsphere_remove_cdrom         = true
 

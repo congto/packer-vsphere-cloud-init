@@ -39,7 +39,7 @@ vm_boot_wait  = "5s"
 
 // Communicator Settings
 communicator_port      = 22
-communicator_timeout   = "30m"
+communicator_timeout   = "50m"
 ssh_handshake_attempts = "20"
 
 // Provisioner Settings

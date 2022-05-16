@@ -42,7 +42,7 @@ autoinstall:
   user-data:
     disable_root: false
     package_update: true
-    package_upgrade: true
+    package_upgrade: false
     package_reboot_if_required: true
   late-commands:
     - echo '${build_username} ALL=(ALL) NOPASSWD:ALL' > /target/etc/sudoers.d/${build_username}
