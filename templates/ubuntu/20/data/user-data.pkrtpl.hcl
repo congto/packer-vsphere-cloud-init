@@ -22,6 +22,8 @@ autoinstall:
     hostname: ubuntu-server
     username: ${build_username}
     password: ${build_password_encrypted}
+  refresh-installer: 
+    update: false
   network:
     network:
       version: 2
@@ -41,7 +43,7 @@ autoinstall:
     - cloud-init
   user-data:
     disable_root: false
-    package_update: true
+    package_update: false
     package_upgrade: false
     package_reboot_if_required: true
   late-commands:
